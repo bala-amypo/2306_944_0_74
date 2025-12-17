@@ -6,13 +6,18 @@ import com.example.demo.newservice.NewService;
 @Service
 public class NewServiceImpl implements NewService{
     private final NewfileRepo rep;
-    
+    public NewServiceImp(NewfileRepo rep){
+        this.rep=rep;
+    }
     @Override
     public NewEntity savedata(NewEntity st) {
+        return rsp.sava(set)
     }
 
     @Override
     public NewEntity getidval(Long id) {
+
+
     }
 
     @Override
