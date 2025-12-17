@@ -8,6 +8,7 @@ public class NewEntity {
     @NotBlank(message = "should not contain spaces")
     private String name;
      @NotBlank(message = "should not contain spaces")
+     @Email(message="invalid format")
     private String email;
-    @NotBlank(message = "should not contain spaces") 
+
 }
