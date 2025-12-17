@@ -16,16 +16,18 @@ public class NewServiceImpl implements NewService{
 
     @Override
     public NewEntity getidval(Long id) {
-
+    return rep.findById(id)
 
     }
 
     @Override
     public List<NewEntity> getall() {
+        return rep.findAll()
     }
 
     @Override
     public NewEntity update(Long id, NewEntity st) {
+        
     }
 
     @Override
