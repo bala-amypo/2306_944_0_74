@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.entity.Studententity;
+import com.example.demo.entity.StudentEntity;
 import com.example.demo.service.Studentservise;
 
 @RestController   
@@ -18,11 +18,11 @@ public class Studentcontroller {
     @Autowired
     Studentservise src;
     @PostMapping("/post")
-    public Studententity postData(@RequestBody Studententity st){
+    public StudentEntity postData(@RequestBody Studententity st){
         return src.savedata(st);
     }
     @GetMapping("/get")
-    public List<Studententity> getdata(){
+    public List<StudentEntity> getdata(){
        return src.retdata();
      }
     @GetMapping("/getid{id}")
